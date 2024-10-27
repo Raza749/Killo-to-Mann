@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amazon Ember", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #22223b;
+}
+
+.container nav {
+    height: 77px;
+    padding: 0 40px;
+    width: 100%;
+    background-color: #4a4e69;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav .logo i {
+    font-size: 50px;
+    color: #c9ada7;
+}
+
+.container nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.container nav ul li a {
+    text-decoration: none;
+    color: #c9ada7;
+    font-size: 20px;
+}
+
+.container nav ul li a i {
+    color: #9a8c98;
+}
+
+.container nav ul li a:hover {
+    color: #f2e9e4;
+}
+
+.container .wrapper {
+    padding: 30px;
+}
+
+.container .wrapper h1 {
+    color: #c9ada7;
+    font-size: 37px;
+    margin: 10px 0;
+    float: right;
+}
+
+.container .wrapper form input {
+    width: 100%;
+    /* padding: 10px 30px; */
+    height: 47px;
+    margin: 10px 0;
+    border: none;
+    outline-color: #c9ada7;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    color: #ad7467;
+    font-weight: 600;
+}
+
+.container .wrapper form input:focus {
+    border: 2px solid #c9ada7;
+}
+
+.container .wrapper form .results {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container .wrapper form .results h4 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #9a8c98;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.container .wrapper form .results h4 span {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.container .wrapper form .btn {
+    width: 100%;
+    padding: 10px 30px;
+    height: 67px;
+    background-color: #c9ada7;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .wrapper form .btn:hover {
+    background-color: #9a8c98;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .container nav ul li {
+        gap: 10px;
+    }
+
+    .container .wrapper form .results{
+        gap: 25px;
+    }
+
+    .container.wrapper form input {
+        padding: 5px 10px;
+    }
+
+    .container.wrapper form.results h4 {
+        height: 150px;
+    }
+
+    .container.wrapper form.btn {
+        padding: 5px 10px;
+    }
+
+    .container.wrapper form.results h4 span {
+        font-size: 20px;
+    }
+
+    .container.wrapper form.btn {
+        font-size: 20px;
+    }
+
+    .container.wrapper form.results h4 {
+        flex-direction: column;
+    }
+
+}
