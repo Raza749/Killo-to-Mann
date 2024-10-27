@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Killo to Mann Converter</title>
+    <!-- Link Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link style.css here -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Contianer Start here -->
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-scale-unbalanced-flip"></i>
+        </div>
+        <ul>
+         <li>
+          <a href="#">Home</a>
+         </li>
+         <li>
+          <a href="#">About</a>
+         </li>
+         <li>
+          <a href="#">Login</a>
+         </li>
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+        <h1>
+          اپنے کلو کو من میں تبدیل کریں
+        </h1>
+        <form action="">
+          <input id="input" type="number" placeholder="کلو درج کریں" />
+          <div  class="results">
+            <h4>
+              من
+              <span id="mann">00</span>
+            </h4>
+            <h4>
+              کلو
+              <span id="killo">00</span>
+            </h4>
+          </div>
+          <button class="btn">
+            تبدیل کریں
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Container End here -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
